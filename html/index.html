@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backslash Development</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src = "../js/script.js"></script>
+</head>
+
+<body>
+<nav id = "navbar"> <a href = "cover.html"> <img src = "../images/slashdev.png" clss = "home btn" alt= "logo" width="130px" href =""></a> <a href="#about" class = "btn">About</a> <a href="#team" class = "btn">Team</a> <a href="#" class = "btn">Work</a> <a href="#" class = "btn">Pricing</a> <a href="#" class = "btn">Contact</a> </nav>
+
+<!--<div class="btn mobile-btn" onclick="openNav()"><i class="fas fa-bars"></i></div>-->
+<div id = "mobile-btn" class="btn mobile-btn" onclick="buttonFunction(); navToggle()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<div id="myNav" class="overlay">
+  <div class="overlay-content"> <a href = "cover.html"> <img src = "../images/logowhitepng.png" clss = "home btn" alt= "logo" width="130px" href =""></a>
+<a href="#about" class = "btn" onclick = "buttonFunction(); navToggle()">About</a> 
+<a href="#team" class = "btn" onclick = "buttonFunction(); navToggle()">Team</a> <a href="#" class = "btn" onclick = "buttonFunction(); navToggle()">Work</a> <a href="#" class = "btn" onclick = "navToggle(); buttonFunction();">Pricing</a> <a href="#" class = "btn" onclick = "buttonFunction(); navToggle()">Contact</a> </div>
+</div>
+<header class = "landing">
+  <div class = "image-content">
+    <div class = "image-wrap"> <img src = "../images/logoicon.png" alt = "logo image" width= "200px">
+      <div class = "image-text">
+        <h1>Try something new.</h1>
+        <p>Web development from the ground up.</p>
+        <a href="#" class="btn main-button">Contact us.</a> </div>
+    </div>
+  </div>
+</header>
+<div class ="about content-wrap" id="about">
+  <h1>Built from the ground up.</h1>
+  <p>With a constant changing internet, it is often hard to stay on top of what you need to do. That’s why we’re here: to help build your website, so you can stick to what you need to do. We build all our websites from scratch, giving us the power to change everything to the way you like, no matter how small or big. Building from the ground up allows us to make your website work perfectly on any platform: Phones, Tablets, or Desktops.</p>
+  <div class= "center-div">
+    <div class =  "icon"> <i class="fas fa-mobile"></i>
+      <p> Mobile</p>
+    </div>
+    <div class =  "icon"> <i class="fas fa-tablet"></i>
+      <p> Tablet</p>
+    </div>
+    <div class =  "icon"> <i class="fas fa-desktop"></i>
+      <p> Desktop</p>
+    </div>
+  </div>
+</div>
+
+<!--
+	<div class ="work content-wrap">
+		<h1>What </h1>
+		
+		<p>Explaning why we are so cool</p>
+	</div>
+-->
+
+<div class ="team" id="team">
+  <div class = "content-wrap">
+    <h1>Our Team</h1>
+    <p>With 7+ years of programming knowledge between us, we know what we are doing. We write efficient code to save your users mobile data fees and time. Members of our team have worked with blockchain, backend development, game design, and other projects. We are committed to helping your webpage look, feel, and be the best that it can be. </p>
+    <div class = "card-center-div">
+      <div class="card"> <img src="../images/alex.jpg" alt="Alex" style="width:100%">
+        <h1>Alex Hudson</h1>
+        <p class="title">Student. Gamer. Coder.</p>
+        <p>Was on Middle School Dance Company</p>
+        <a href="https://www.alexhudson.info"><i class="fas fa-user"></i></a> <a href="https://www.instagram.com/ahudz42/"><i class="fab fa-instagram"></i></a> <a href="https://www.linkedin.com/in/alex-m-hudson/"><i class="fab fa-linkedin"></i></a> <a href="https://www.facebook.com/alexander.hudson.200"><i class="fab fa-facebook"></i></a>
+        <p> <a class="btn" href="mailto:alexmhudson@gmail.com">Contact</a> </p>
+      </div>
+      <div class="card"> <img src="../images/cannon.JPG" alt="Cannon" style="width:100%">
+        <h1>Cannon Farr</h1>
+        <p class="title">Drummer.</p>
+        <p>Took a College Girl to Prom</p>
+        <a href="#"><i class="fas fa-user"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab fa-facebook"></i></a>
+        <p> <a class="btn" href="mailto:example@example.com">Contact</a> </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class ="pricing content-wrap">
+  <h1>whats our cost?</h1>
+  <p>Explaning why we are so cool</p>
+</div>
+<div class ="contact content-wrap">
+  <h1>Let us know</h1>
+  <p>Explaning why we are so cool</p>
+</div>
+</body>
+</html>

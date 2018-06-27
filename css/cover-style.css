@@ -1,0 +1,70 @@
+
+body {
+	background: #474747;
+	color: #DDDDDD;
+	margin: 0;
+	padding: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+
+.background-image{
+
+
+	background: radial-gradient(rgba(0,0,0,.2),rgba(0,0,0,1)), url(../images/woods.jpg) no-repeat fixed;
+	
+	background-size: cover;
+	position: fixed!important;
+	height: 100%;
+	width: 100%
+}
+	
+
+.logo-image{
+	margin-top: 25vh;
+	margin-left: 25vw;
+	width:50vw;
+}
+
+.sub-text{
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 150%;
+	text-shadow: -1px 1px 5px white;
+	font-weight: 100;
+	
+}
+
+.nav-buttons{
+	
+	widht: 100vw;
+	text-align: center;
+	color: black;
+	
+	
+}
+
+.nav-buttons a{
+	margin: 1%;
+}
+
+.btn {
+  border-radius: 5px;
+  color: white;
+	background: #fffffff;
+  font-size: 25px;
+	font-weight: 100;
+  padding: 5px 10px 5px 10px;
+  border: solid white 2px;
+  text-decoration: none;
+	transition: .3s;
+	transition-timing-function: ease
+}
+
+.btn:hover {
+box-shadow: 0px 1px 3px #666666;
+background: black;
+  text-decoration: none;
+}

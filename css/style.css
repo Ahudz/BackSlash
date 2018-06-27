@@ -1,0 +1,338 @@
+/* Global styles
+--------------------------------*/
+
+html {
+	box-sizing: border-box;
+	margin: 0;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+@font-face {
+	font-family: custom;
+	src: url(../fonts/segoe/segoeui.ttf)
+}
+body {
+	background: white;
+	color: black;
+	font-family: "custom";
+	margin: 0;
+}
+
+h1{
+	margin-top: 60px;
+	font-size: 3em;
+}
+
+p{
+	font-size: 1.1em;
+}
+.content-wrap {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 10px;
+	overflow: auto;
+}
+.image-wrap{
+	margin-left: 5vw;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 5px;
+  color: black;
+	background: #fffffff;
+  font-size: 25px;
+	font-weight: 100;
+  padding: 5px 10px 5px 10px;
+ border: solid #000000 2px;
+  text-decoration: none;
+	transition: .3s;
+	transition-timing-function: ease
+}
+
+.btn:hover {
+box-shadow: 0px 1px 3px #666666;
+/*  background: #ffffff;*/
+  text-decoration: none;
+transition: .3s;
+	transition-timing-function: ease
+}
+
+.center-div{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	}
+
+
+.icon{
+	text-align: center;
+	font-size: 100px;
+	color: grey;
+	display: inline-block;
+	margin: 5%
+	
+}
+.icon p{
+	font-size: 1rem;
+	color: black;
+	word-spacing: normal;
+}
+
+.card {
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+	padding-bottom: 25px;
+    text-align: center;
+	border: black 2px;
+	border-radius: 5px;
+	background: rgba(255,150,0,.8);
+}
+.card img{
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+
+}
+.title {
+	font-weight: 700;
+    color: black;
+    font-size: 18px;
+}
+.card .btn{
+	padding: 1% 15%;
+}
+
+.card .btn:hover{
+	opacity: .7;
+}
+/* Nav styles
+--------------------------------*/
+#navbar{
+	position: fixed;
+	top: -70px;
+	background: white;
+	width:100%;
+	transition: top 0.3s;
+}
+#navbar .btn{
+	padding:10px;
+	display:inline-block;
+	float: right;
+	border: none;
+	margin: 3px 10px ;
+	
+}
+
+#navbar img{
+	margin: 2px;
+	padding: 2px;
+	float: left;
+
+	transition: .3s;
+	transition-timing-function: ease
+}
+
+#navbar img:hover{
+	background: rgba(255,150,0,.5);
+	transition: .3s;
+	transition-timing-function: ease
+}
+
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.mobile-btn{
+	margin: 5px;
+	position: fixed;
+	right:0px;
+	color:white;
+	border-color: white;
+	background: black;
+	z-index: 5;
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* header styles
+--------------------------------*/
+header{
+
+	color: white;
+	padding-top:20px;
+	padding-bottom: 38%;
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(../images/darkComputer.jpg) no-repeat fixed;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	
+}
+header h1{
+	font-size: 300%;
+	
+	
+}
+header p{
+	font-size: 150%;
+	margin-bottom: 50px;
+}
+header img{
+}
+
+.main-button{
+	margin-top: 20px;
+	color: white;
+	border: solid white 2px;
+	padding: 10px;
+	
+}
+
+.main-button:hover{
+	border: solid white 5px;
+	margin: -3px;
+}
+
+
+/* about styles
+--------------------------------*/
+
+/* work styles
+--------------------------------*/
+.team{
+	background:#C9C9C9;
+}
+
+.team .card{
+	margin-top: 5%;
+	margin-bottom: 5%
+}
+.card i{
+	color: black;
+	font-size: 35px;
+	padding: 5px
+}
+
+.card i:hover{
+	opacity: .7;
+}
+
+
+/* team styles
+--------------------------------*/
+
+/* pricing styles
+--------------------------------*/
+
+/* contact styles
+--------------------------------*/
+
+/* footer styles
+--------------------------------*/
+
+/* dynamic  styles
+--------------------------------*/
+
+/*cards are special*/
+@media (min-width:1050px){
+	.card-center-div{
+	 display: flex;
+     align-items: center;
+     justify-content: center;
+	}
+}
+
+/*side menu*/
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*desktop*/
+@media (min-width:750px){
+	.image-content{
+		margin-top: 40vh;
+	}
+	.image-content img{
+		float: left;
+	}
+	.mobile-btn{
+		top: -60px;
+	}
+}
+
+/*mobile*/
+@media (max-width : 749px ){
+	nav{
+		display: none;
+	}
+	.image-content{
+		margin-top: 20vh;
+	}
+	header img{
+		display: none;
+	}
+	.mobile-btn{
+		top: 0px;
+	}
+	
+}
