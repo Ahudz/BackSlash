@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<nav id = "navbar"> <a href = "cover.html"> <img src = "../images/slashdev.png" clss = "home btn" alt= "logo" width="130px" href =""></a> <a href="#about" class = "btn">About</a> <a href="#team" class = "btn">Team</a> <a href="#" class = "btn">Work</a> <a href="#" class = "btn">Pricing</a> <a href="#" class = "btn">Contact</a> </nav>
+<nav id = "navbar"> <a href = "#"> <img id="imageNormal" src = "../images/logo/backslash logo_BackSlash 3 Grey.png" alt= "logo" width="130px" href =""><!--<img id="imageHover" src="../images/logo/backslash logo_BacksSlash 4 Grey.png" width="130px" />--></a> <a href="#about" class = "btn">About</a> <a href="#team" class = "btn">Team</a> <a href="#pricing" class = "btn">Pricing</a> <a href="mailto:alexmhudson@gmail.com" class = "btn">Contact</a> </nav>
 
 <!--<div class="btn mobile-btn" onclick="openNav()"><i class="fas fa-bars"></i></div>-->
 <div id = "mobile-btn" class="btn mobile-btn" onclick="buttonFunction(); navToggle()">
@@ -20,13 +20,11 @@
   <div class="bar3"></div>
 </div>
 <div id="myNav" class="overlay">
-  <div class="overlay-content"> <a href = "cover.html"> <img src = "../images/logowhitepng.png" clss = "home btn" alt= "logo" width="130px" href =""></a>
-<a href="#about" class = "btn" onclick = "buttonFunction(); navToggle()">About</a> 
-<a href="#team" class = "btn" onclick = "buttonFunction(); navToggle()">Team</a> <a href="#" class = "btn" onclick = "buttonFunction(); navToggle()">Work</a> <a href="#" class = "btn" onclick = "navToggle(); buttonFunction();">Pricing</a> <a href="#" class = "btn" onclick = "buttonFunction(); navToggle()">Contact</a> </div>
+  <div class="overlay-content"> <a href = "cover.html"> <img src = "../images/logo/backslash logo_BackSlash 2 White.png" clss = "home btn" alt= "logo" width="130px" href =""></a> <a href="#about" class = "btn" onclick = "buttonFunction(); navToggle()">About</a> <a href="#team" class = "btn" onclick = "buttonFunction(); navToggle()">Team</a> <a href="#pricing" class = "btn" onclick = "navToggle(); buttonFunction();">Pricing</a> <a href="mailto:alexmhudson@gmail.com" class = "" onclick = "buttonFunction(); navToggle()">Contact</a> </div>
 </div>
 <header class = "landing">
   <div class = "image-content">
-    <div class = "image-wrap"> <img src = "../images/logoslash.png" alt = "logo image" width= "200px">
+    <div class = "image-wrap"> <img src = "../images/logo/backslash logo_BackSlash Icon.png" alt = "logo image" width= "200px">
       <div class = "image-text">
         <h1>Try something new.</h1>
         <p>Web development from the ground up.</p>
@@ -80,13 +78,35 @@
     </div>
   </div>
 </div>
-<div class ="pricing content-wrap">
-  <h1>whats our cost?</h1>
-  <p>Explaning why we are so cool</p>
-</div>
-<div class ="contact content-wrap">
-  <h1>Let us know</h1>
-  <p>Explaning why we are so cool</p>
+<div class ="pricing" id = "pricing">
+  <div class = "content-wrap">
+    <h1>Pricing</h1>
+    <div class = "card-center-div">
+      <div class="card"> <img src="../images/personalProfile.jpg" alt="Personal Website" style="width:100%">
+        <h1>Personal</h1>
+        <p class="title">Built to show why you are awesome.</p>
+        <p>$250 Upfront. $20 monthly for hosting.</p>
+        <p> <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Personal Website">Contact</a> </p>
+      </div>
+      <div class="card"> <img src="../images/startup.jpg" alt="Startup Website" style="width:100%">
+        <h1>Startup</h1>
+        <p class="title">Designed to show your product.</p>
+        <p>$500 Upfront. $30 Monthly for hosting</p>
+        <p> <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Startup Website">Contact</a> </p>
+      </div>
+      <div class="card"> <img src="../images/custom.jpg" alt="Custom Website" style="width:100%">
+        <h1>Custom</h1>
+        <p class="title">Everything your way</p>
+        <p>Contact for pricing</p>
+        <p> <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Custom Website">Contact</a> </p>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
+	<footer>
+		<div class = "content-wrap">
+			<img alt="Logo" src="../images/logo/backslash logo_BackSlash 2 Grey.png" width = "500px">
+		</div>
+	</footer>
 </html>

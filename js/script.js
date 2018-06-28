@@ -44,5 +44,5 @@ function buttonFunction() {
 
 console.log("finished");
 
-
+//document.querySelector("#navbar img").innerHTML = '<img src="../images/logo/backslash logo_BackSlash 3 White.png" clss = "home btn" alt= "logo" width="130px" href ="" />';
 

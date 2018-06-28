@@ -90,7 +90,7 @@ transition: .3s;
     text-align: center;
 	border: black 2px;
 	border-radius: 5px;
-	background: rgba(255,150,0,.8);
+	background: rgba(51,133,198,.80);
 }
 .card img{
 	border-top-right-radius: 5px;
@@ -131,16 +131,17 @@ transition: .3s;
 	margin: 2px;
 	padding: 2px;
 	float: left;
-
 	transition: .3s;
 	transition-timing-function: ease
 }
+
 
 #navbar img:hover{
-	background: rgba(255,150,0,.5);
+	background: rgba(51,133,198,.50);
 	transition: .3s;
 	transition-timing-function: ease
 }
+
 
 
 
@@ -233,6 +234,8 @@ header p{
 	margin-bottom: 50px;
 }
 header img{
+	
+	
 }
 
 .main-button{
@@ -254,8 +257,13 @@ header img{
 
 /* work styles
 --------------------------------*/
+
+
+
+/* team styles
+--------------------------------*/
 .team{
-	background:#C9C9C9;
+	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,.5)), url(../images/woods2.jpg) no-repeat fixed center;
 }
 
 .team .card{
@@ -272,18 +280,32 @@ header img{
 	opacity: .7;
 }
 
-
-/* team styles
---------------------------------*/
-
 /* pricing styles
 --------------------------------*/
+.pricing{
+	background: grey;
+}
+.pricing .card{
+	
+	max-width: 400px;
+	margin-bottom: 10px;
+}
+.pricing .card img{
+	
+	max-height: 400px;
+}
 
 /* contact styles
 --------------------------------*/
 
 /* footer styles
 --------------------------------*/
+footer{
+	text-align: center;
+}
+footer img{
+	margin: 10px;
+}
 
 /* dynamic  styles
 --------------------------------*/
