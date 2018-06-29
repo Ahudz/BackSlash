@@ -124,6 +124,7 @@ transition: .3s;
 	background: white;
 	width:100%;
 	transition: top 0.3s;
+	z-index: 2
 }
 #navbar .btn{
 	padding:10px;
@@ -270,7 +271,7 @@ header img{
 /* team styles
 --------------------------------*/
 .team{
-	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,.5)), url(../images/woods2.jpg) no-repeat fixed center;
+	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,.2)), url(../images/woods2.jpg) no-repeat fixed center;
 }
 
 .team .card{
@@ -308,7 +309,7 @@ header img{
 /* footer styles
 --------------------------------*/
 footer{
-	height: 26vh;
+	height: 28vh;
     color:whitesmoke;
     font-size:12px;
 
@@ -318,17 +319,17 @@ footer{
 }
 .footer-logo{
 	width: 100vw;
-	z-index:-1;
-	position:fixed;
+
 	text-align: center;
 }
 footer img{
+	position:fixed;
 	height: 25vh;
 	width: auto;
- 
-	padding: 0;
-	bottom: 0px;
-	left: 0px;
+ 	z-index:-1;
+	padding: 0px;
+	bottom: 5px;
+	left: 5px;
 
 	margin-bottom: 1vh
 	
