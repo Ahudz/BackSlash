@@ -17,6 +17,13 @@ body {
 	color: black;
 	font-family: "custom";
 	margin: 0;
+	z-index:0;
+
+}
+main{
+	position:relative;
+    z-index:1;
+	background: white;
 }
 
 h1{
@@ -185,7 +192,7 @@ transition: .3s;
 	right:0px;
 	color:white;
 	border-color: white;
-	background: black;
+	background: rgba(0,0,0,.5);
 	z-index: 5;
 }
 
@@ -301,10 +308,31 @@ header img{
 /* footer styles
 --------------------------------*/
 footer{
+	height: 26vh;
+    color:whitesmoke;
+    font-size:12px;
+
+    position:relative;
+    z-index:-2;
+
+}
+.footer-logo{
+	width: 100vw;
+	z-index:-1;
+	position:fixed;
 	text-align: center;
 }
 footer img{
-	margin: 10px;
+	height: 25vh;
+	width: auto;
+ 
+	padding: 0;
+	bottom: 0px;
+	left: 0px;
+
+	margin-bottom: 1vh
+	
+	
 }
 
 /* dynamic  styles
