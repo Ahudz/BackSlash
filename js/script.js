@@ -1,7 +1,8 @@
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 
-
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -11,38 +12,49 @@ function scrollFunction() {
   }
 }
 
-
 //mobile nav hamburger menu
 var number = 0;
 function navToggle() {
- "use strict";
-  if(number % 2 === 0){
-	 openNav();
- }else{
-	 closeNav();
- }
- console.log("click Num: "+ number);
- number = number + 1;
+  "use strict";
+  if (number % 2 === 0) {
+    openNav();
+  } else {
+    closeNav();
+  }
+  console.log("click Num: " + number);
+  number = number + 1;
 }
 
 //side menu
 function openNav() {
-	"use strict";
-    document.getElementById("myNav").style.width = "100%";
+  "use strict";
+  document.getElementById("myNav").style.width = "100%";
 }
 
 function closeNav() {
-	"use strict";
-    document.getElementById("myNav").style.width = "0%";
+  "use strict";
+  document.getElementById("myNav").style.width = "0%";
 }
 
 function buttonFunction() {
-	"use strict";
-	document.getElementById("mobile-btn").classList.toggle("change");
+  "use strict";
+  document.getElementById("mobile-btn").classList.toggle("change");
 }
-
 
 console.log("finished");
 
-//document.querySelector("#navbar img").innerHTML = '<img src="../images/logo/backslash logo_BackSlash 3 White.png" clss = "home btn" alt= "logo" width="130px" href ="" />';
+$(document).ready(function($) {
+  // Your code goes here
+  console.log("working");
+  document.getElementById("imageNormal").addEventListener("mouseover", () => {
+    console.log("event");
+    document.getElementById("imageNormal").src =
+      "images/logo/backslash logo_BackSlash 3 White.png";
+  });
 
+  document.getElementById("imageNormal").addEventListener("mouseout", () => {
+    console.log("eventoff");
+    document.getElementById("imageNormal").src =
+      "images/logo/backslash logo_BackSlash 3 Grey.png";
+  });
+});
