@@ -191,6 +191,23 @@ p {
   z-index: 5;
 }
 
+.mobile-slash-left,
+.mobile-slash-right {
+  width: 35px;
+  margin: 1px 0;
+  transition: 0.4s;
+}
+
+.mobile-slash-left {
+  position: relative;
+}
+
+.mobile-slash-right {
+  position: absolute;
+  top: 5px;
+  right: -5px;
+}
+
 .bar1,
 .bar2,
 .bar3 {
