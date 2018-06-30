@@ -19,12 +19,13 @@ body {
   color: black;
   font-family: "custom";
   margin: 0;
-  z-index: 0;
+/*  z-index: 0;*/
 }
 main {
-  position: relative;
-  z-index: 1;
   background: white;
+  position: relative;
+/*  z-index: 1;*/
+
 }
 
 h1 {
@@ -131,6 +132,9 @@ p {
   border: none;
   margin: 3px 10px;
 }
+#navbar .btn:hover{
+	background: rgba(128,128,128, .5);
+}
 
 #navbar img {
   margin: 2px;
@@ -141,9 +145,10 @@ p {
 }
 
 #navbar img:hover {
-  background: rgba(51, 133, 198, 0.5);
+  background: rgba(128,128,128, .5);
   transition: 0.3s;
   transition-timing-function: ease;
+  border-radius: 5px;
 }
 
 .overlay {
@@ -188,7 +193,7 @@ p {
   color: white;
   border-color: white;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 5;
+  z-index: 1;
 }
 
 .mobile-slash-left,
@@ -268,20 +273,26 @@ header img {
 
 /* about styles
 --------------------------------*/
-
+.about{
+	background: white;
+}
 /* work styles
 --------------------------------*/
 
 /* team styles
 --------------------------------*/
 .team {
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2)),
+  background: linear-gradient(rgba(255, 255, 255, 2), rgba(255, 255, 255, 0.1)),
     url(../images/woods2.jpg) no-repeat fixed center;
 }
 
 .team .card {
   margin-top: 5%;
   margin-bottom: 5%;
+	
+}
+.card a{
+	text-decoration: none;
 }
 .card i {
   color: black;
@@ -311,6 +322,8 @@ header img {
 
 /* footer styles
 --------------------------------*/
+
+
 footer {
   height: 28vh;
   color: whitesmoke;
@@ -388,3 +401,11 @@ footer img {
     top: 0px;
   }
 }
+
+
+
+/*Colors
+bright blue rgba(51, 133, 198, 1);
+
+gray rgb(128,128,128)
+*/
