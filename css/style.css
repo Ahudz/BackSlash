@@ -123,7 +123,7 @@ p {
   background: white;
   width: 100%;
   transition: top 0.3s;
-  z-index: 2;
+  z-index: 1;
 }
 #navbar .btn {
   padding: 10px;
@@ -282,7 +282,7 @@ header img {
 /* team styles
 --------------------------------*/
 .team {
-  background: linear-gradient(rgba(255, 255, 255, 2), rgba(255, 255, 255, 0.1)),
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3)),
     url(../images/woods2.jpg) no-repeat fixed center;
 }
 
@@ -330,7 +330,7 @@ footer {
   font-size: 12px;
 
   position: relative;
-  z-index: -2;
+/*  z-index: -2;*/
 }
 .footer-logo {
   width: 100vw;
@@ -338,10 +338,10 @@ footer {
   text-align: center;
 }
 footer img {
-  position: fixed;
+/*  position: fixed;*/
   height: 25vh;
   width: auto;
-  z-index: -1;
+/*  z-index: -1;*/
   padding: 0px;
   bottom: 5px;
   left: 5px;
