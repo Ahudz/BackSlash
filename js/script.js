@@ -41,9 +41,10 @@ function buttonFunction() {
   document.getElementById("mobile-btn").classList.toggle("change");
 }
 
-
-
-
+function logoHover() {
+  document.getElementById("imageNormal").src =
+    "images/logo/backslash logo_BackSlash 3 White.png";
+}
 
 $(document).ready(function($) {
   // Your code goes here
@@ -62,13 +63,14 @@ $(document).ready(function($) {
 });
 
 //ie detection
-var isIE = !!navigator.userAgent.match(/Trident/g) || !!navigator.userAgent.match(/MSIE/g);
+var isIE =
+  !!navigator.userAgent.match(/Trident/g) ||
+  !!navigator.userAgent.match(/MSIE/g);
 
-if(isIE){
- alert("Heyo! it looks like you are using Internet Explorer! Internet explorer is no longer supported by Microsoft and we recomend you use the Edge Browser instead. Our website may look a little funny if you continue with internet explorer!"); 
+if (isIE) {
+  alert(
+    "Heyo! it looks like you are using Internet Explorer! Internet explorer is no longer supported by Microsoft and we recomend you use the Edge Browser instead. Our website may look a little funny if you continue with internet explorer!"
+  );
 }
 
-
-
 console.log("finished");
-
