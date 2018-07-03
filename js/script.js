@@ -41,6 +41,7 @@ function buttonFunction() {
   document.getElementById("mobile-btn").classList.toggle("change");
 }
 
+//nav bar logo hover
 function logoHover() {
   document.getElementById("imageNormal").src =
     "images/logo/backslash logo_BackSlash 3 White.png";

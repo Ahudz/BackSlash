@@ -25,7 +25,6 @@ main {
   background: white;
   position: relative;
   z-index: 2;
-
 }
 
 h1 {
@@ -132,8 +131,8 @@ p {
   border: none;
   margin: 3px 10px;
 }
-#navbar .btn:hover{
-	background: rgba(128,128,128, .5);
+#navbar .btn:hover {
+  background: rgba(128, 128, 128, 0.5);
 }
 
 #navbar img {
@@ -145,7 +144,7 @@ p {
 }
 
 #navbar img:hover {
-  background: rgba(128,128,128, .5);
+  background: rgba(128, 128, 128, 0.5);
   transition: 0.3s;
   transition-timing-function: ease;
   border-radius: 5px;
@@ -186,6 +185,16 @@ p {
   color: #f1f1f1;
 }
 
+/* .mobile-btn {
+  margin: 5px;
+  position: fixed;
+  right: 0px;
+  color: white;
+  border-color: white;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+} */
+
 .mobile-btn {
   margin: 5px;
   position: fixed;
@@ -198,19 +207,29 @@ p {
 
 .mobile-slash-left,
 .mobile-slash-right {
-  width: 35px;
-  margin: 1px 0;
+  width: 20px;
+  margin: 0px -4.5px 0px -4.5px;
   transition: 0.4s;
 }
 
 .mobile-slash-left {
   position: relative;
+  vertical-align: middle;
 }
 
 .mobile-slash-right {
-  position: absolute;
-  top: 5px;
-  right: -5px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.change .mobile-slash-left {
+  -webkit-transform: scaleX(-1) translate(-8.25px, 0px);
+  transform: scaleX(-1) translate(-8.25px, 0px);
+}
+
+.change .mobile-slash-right {
+  -webkit-transform: translate(-8.25px, 0px);
+  transform: translate(-8.25px, 0px);
 }
 
 .bar1,
@@ -273,8 +292,8 @@ header img {
 
 /* about styles
 --------------------------------*/
-.about{
-	background: white;
+.about {
+  background: white;
 }
 /* work styles
 --------------------------------*/
@@ -289,10 +308,9 @@ header img {
 .team .card {
   margin-top: 5%;
   margin-bottom: 5%;
-	
 }
-.card a{
-	text-decoration: none;
+.card a {
+  text-decoration: none;
 }
 .card i {
   color: black;
@@ -316,8 +334,8 @@ header img {
   margin-left: auto;
   margin-right: auto;
 }
-.pricing p{
-	padding: 10px 20px;
+.pricing p {
+  padding: 10px 20px;
 }
 .pricing .card img {
   max-height: 400px;
@@ -328,7 +346,6 @@ header img {
 
 /* footer styles
 --------------------------------*/
-
 
 footer {
   height: 100px;
@@ -354,21 +371,21 @@ footer img {
 
   margin-bottom: 1vh;
 }
-.footer-content{
-	position: fixed;
+.footer-content {
+  position: fixed;
   width: auto;
   z-index: 1;
   padding: 0px;
   bottom: 5px;
- right: 5px;
+  right: 5px;
   margin-bottom: 1vh;
 }
-.footer-content .btn{
-	margin: 1vw;
-	background: rgba(51, 133, 198, .7);
+.footer-content .btn {
+  margin: 1vw;
+  background: rgba(51, 133, 198, 0.7);
 }
-.footer-content .btn:hover{
-	background: black;
+.footer-content .btn:hover {
+  background: black;
 }
 
 /* dynamic  styles
@@ -405,6 +422,7 @@ footer img {
   }
   .mobile-btn {
     top: -60px;
+    display: none;
   }
 }
 
@@ -423,8 +441,6 @@ footer img {
     top: 0px;
   }
 }
-
-
 
 /*Colors
 bright blue rgba(51, 133, 198, 1);
