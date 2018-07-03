@@ -43,8 +43,13 @@ function buttonFunction() {
 
 //nav bar logo hover
 function logoHover() {
-  document.getElementById("imageNormal").src =
+  document.getElementById("image-normal").src =
     "images/logo/backslash logo_BackSlash 3 White.png";
+}
+
+function logoOffHover() {
+  document.getElementById("image-normal").src =
+    "images/logo/backslash logo_BackSlash 3 Grey.png";
 }
 
 //ie detection
