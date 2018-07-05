@@ -52,6 +52,19 @@ function logoOffHover() {
     "images/logo/backslash logo_BackSlash 3 Grey.png";
 }
 
+//arrow scroll
+$(document).ready(function() {
+  $("#landing-arrow-link").on("click", function(event) {
+    console.log("here");
+    $("html, body").animate(
+      {
+        scrollTop: $("#about").offset().top
+      },
+      1000
+    );
+  });
+});
+
 //ie detection
 var isIE =
   !!navigator.userAgent.match(/Trident/g) ||

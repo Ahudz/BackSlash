@@ -290,6 +290,29 @@ header img {
   margin: -3px;
 }
 
+#landing-arrow {
+  display: flex;
+  justify-self: center;
+  margin-top: 200px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+}
+#landing-arrow-link {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+  -webkit-text-stroke: 0.025px white;
+  text-align: center;
+  transition: 0.2s;
+}
+
+#landing-arrow-link:hover {
+  cursor: pointer;
+  font-size: 60px;
+}
+
 /* about styles
 --------------------------------*/
 .about {
