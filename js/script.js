@@ -53,12 +53,51 @@ function logoOffHover() {
 }
 
 //arrow scroll
-$(document).ready(function() {
+$(function() {
   $("#landing-arrow-link").on("click", function(event) {
     console.log("here");
     $("html, body").animate(
       {
         scrollTop: $("#about").offset().top
+      },
+      1000
+    );
+  });
+});
+
+//About scroll
+$(function() {
+  $("#about-nav").on("click", function(event) {
+    console.log("about");
+    $("html, body").animate(
+      {
+        scrollTop: $("#about").offset().top
+      },
+      1000
+    );
+  });
+});
+
+//Team Scroll
+$(function() {
+  $("#team-nav").on("click", function(event) {
+    console.log("here");
+    $("html, body").animate(
+      {
+        scrollTop: $("#team").offset().top
+      },
+      1000
+    );
+  });
+});
+
+//Pricing Scroll
+$(function() {
+  $("#pricing-nav").on("click", function(event) {
+    console.log("here");
+    $("html, body").animate(
+      {
+        scrollTop: $("#pricing").offset().top
       },
       1000
     );
