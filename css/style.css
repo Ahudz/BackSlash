@@ -318,6 +318,29 @@ header img {
 .about {
   background: white;
 }
+.icon {
+  text-align: center;
+  font-size: 100px;
+  color: grey;
+  display: inline-block;
+  margin: 5%;
+  
+}
+.about .btn{
+	border: none;
+}
+.about .btn:hover{
+	border: 1px;
+}
+.icon p {
+  font-size: 1rem;
+  color: black;
+  word-spacing: normal;
+}
+.icon a{
+  text-decoration: none;
+  color: grey;
+}
 /* work styles
 --------------------------------*/
 
