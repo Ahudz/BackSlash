@@ -486,6 +486,18 @@ footer img {
   #landing-arrow {
     display: none;
   }
+	header{
+		 background:  linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/surface.jpg) no-repeat fixed;
+		background-size: cover;
+  background-position: center;
+  height: 100vh;
+	}
+	
+
 }
 
 /*Colors
