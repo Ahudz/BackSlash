@@ -1,3 +1,4 @@
+
 /* Global styles
 --------------------------------*/
 
@@ -64,7 +65,6 @@ p {
 .btn:hover {
   box-shadow: 0px 1px 3px #666666;
   /*  background: #ffffff;*/
-  text-decoration: none;
   transition: 0.3s;
   transition-timing-function: ease;
 }
@@ -75,18 +75,6 @@ p {
   justify-content: center;
 }
 
-.icon {
-  text-align: center;
-  font-size: 100px;
-  color: grey;
-  display: inline-block;
-  margin: 5%;
-}
-.icon p {
-  font-size: 1rem;
-  color: black;
-  word-spacing: normal;
-}
 
 .card {
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
@@ -128,11 +116,16 @@ p {
   padding: 10px;
   display: inline-block;
   float: right;
-  border: none;
+  border: 3px;
   margin: 3px 10px;
+	transition: none;
 }
 #navbar .btn:hover {
-  background: rgba(128, 128, 128, 0.5);
+/*  background: rgba(128, 128, 128, 0.5);*/
+	 border: solid #000000 1px;
+	 padding: 9px;
+/*	box-shadow: none;*/
+    transition: none;
 }
 
 #navbar img {
@@ -241,16 +234,13 @@ p {
   margin: 6px 0;
   transition: 0.4s;
 }
-
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-
 .change .bar2 {
   opacity: 0;
 }
-
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
@@ -503,3 +493,4 @@ bright blue rgba(51, 133, 198, 1);
 
 gray rgb(128,128,128)
 */
+
