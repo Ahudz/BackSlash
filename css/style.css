@@ -278,6 +278,9 @@ header p {
 header img {
 }
 
+.image-content {
+}
+
 .main-button {
   margin-top: 20px;
   color: white;
@@ -292,12 +295,16 @@ header img {
 
 #landing-arrow {
   display: flex;
+  flex-direction: column;
   justify-self: center;
-  margin-top: 200px;
-  align-items: center;
+  width: 100%;
+  align-self: center;
   justify-items: center;
   justify-content: center;
   align-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
 }
 #landing-arrow-link {
   text-decoration: none;
@@ -485,6 +492,9 @@ footer img {
   }
   .mobile-btn {
     top: 0px;
+  }
+  #landing-arrow {
+    display: none;
   }
 }
 

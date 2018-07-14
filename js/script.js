@@ -53,7 +53,7 @@ function logoOffHover() {
 }
 
 //arrow scroll
-$(document).ready(function() {
+$(function() {
   $("#landing-arrow-link").on("click", function(event) {
     console.log("here");
     $("html, body").animate(
@@ -65,15 +65,56 @@ $(document).ready(function() {
   });
 });
 
-//ie detection
-var isIE =
-  !!navigator.userAgent.match(/Trident/g) ||
-  !!navigator.userAgent.match(/MSIE/g);
+//About scroll
+$(function() {
+  $("#about-nav").on("click", function(event) {
+    console.log("about");
+    $("html, body").animate(
+      {
+        scrollTop: $("#about").offset().top
+      },
+      1000
+    );
+  });
+});
 
-if (isIE) {
-  alert(
-    "Heyo! it looks like you are using Internet Explorer! Internet explorer is no longer supported by Microsoft and we recomend you use the Edge Browser instead. Our website may look a little funny if you continue with internet explorer!"
-  );
-}
+//Team Scroll
+$(function() {
+  $("#team-nav").on("click", function(event) {
+    console.log("here");
+    $("html, body").animate(
+      {
+        scrollTop: $("#team").offset().top
+      },
+      1000
+    );
+  });
+});
+
+//Pricing Scroll
+$(function() {
+  $("#pricing-nav").on("click", function(event) {
+    console.log("here");
+    $("html, body").animate(
+      {
+        scrollTop: $("#pricing").offset().top
+      },
+      1000
+    );
+  });
+});
+
+//ie detection
+$(document).ready(function() {
+  var isIE =
+    !!navigator.userAgent.match(/Trident/g) ||
+    !!navigator.userAgent.match(/MSIE/g);
+
+  if (isIE) {
+    alert(
+      "Heyo! it looks like you are using Internet Explorer! Internet explorer is no longer supported by Microsoft and we recomend you use the Edge Browser instead. Our website may look a little funny if you continue with internet explorer!"
+    );
+  }
+});
 
 console.log("finished");
