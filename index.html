@@ -1,210 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 
 <!--	Developed by Backslash Dev-->
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Backslash Development</title>
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backslash Development</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/png" href="images/logo/backslash logo_BackSlash Icon.png" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+<link rel="shortcut icon" type="image/png" href="images/logo/backslash logo_BackSlash Icon.png" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-  <!--<script type="text/javascript" src="js/test.js"></script>-->
+<!--<script type="text/javascript" src="js/test.js"></script>-->
 </head>
 
 <body>
-  <nav id="navbar">
-    <a href="#">
-      <img id="image-normal" src="images/logo/backslash logo_BackSlash 3 Grey.png" alt="logo" width="150px" href="" onmouseover="logoHover()"
-        onmouseout="logoOffHover()">
-    </a>
-    <a href="#about" id="about-nav" id="about-nav" class="btn">About</a>
-    <a href="#team" id="team-nav" class="btn">Team</a>
-    <a href="#pricing" id="pricing-nav" class="btn">Pricing</a>
-    <a href="mailto:alexmhudson@gmail.com" class="btn">Contact</a>
-  </nav>
+<nav id="navbar"> <a href="#"> <img id="image-normal" src="images/logo/backslash logo_BackSlash 3 Grey.png" alt="logo" width="150px" href="" onmouseover="logoHover()"
+        onmouseout="logoOffHover()"> </a> <a href="#about" id="about-nav" id="about-nav" class="btn">About</a> <a href="#team" id="team-nav" class="btn">Team</a> <a href="#pricing" id="pricing-nav" class="btn">Pricing</a> <a href="mailto:alexmhudson@gmail.com" class="btn">Contact</a> </nav>
 
-  <!--<div class="btn mobile-btn" onclick="openNav()"><i class="fas fa-bars"></i></div>-->
-  <div id="mobile-btn" class="btn mobile-btn" onclick="buttonFunction(); navToggle()">
-
-    <img class="mobile-slash-left" src="images/logo/Single Slash_Icon Left-Only.png">
-    <img class="mobile-slash-right" src="images/logo/Single Slash_Icon Right-Only.png">
-
-
-    <!--<div class="bar1"></div>
+<!--<div class="btn mobile-btn" onclick="openNav()"><i class="fas fa-bars"></i></div>-->
+<div id="mobile-btn" class="btn mobile-btn" onclick="buttonFunction(); navToggle()"> <img class="mobile-slash-left" src="images/logo/Single Slash_Icon Left-Only.png"> <img class="mobile-slash-right" src="images/logo/Single Slash_Icon Right-Only.png"> 
+  
+  <!--<div class="bar1"></div>
     <div class="bar2"></div>
-    <div class="bar3"></div>-->
-  </div>
+    <div class="bar3"></div>--> 
+</div>
 
-  <!--*******MOBILE********-->
-  <div id="myNav" class="overlay">
-    <div class="overlay-content">
-      <a href="#">
-        <img src="images/logo/backslash logo_BackSlash 2 White.png" clss="home btn" alt="logo" width="130px" href="">
-      </a>
-      <a href="#about" class="btn" onclick="buttonFunction(); navToggle()">About</a>
-      <a href="#team" class="btn" onclick="buttonFunction(); navToggle()">Team</a>
-      <a href="#pricing" class="btn" onclick="navToggle(); buttonFunction();">Pricing</a>
-      <a href="mailto:alexmhudson@gmail.com" class="btn" onclick="buttonFunction(); navToggle()">Contact</a>
+<!--*******MOBILE********-->
+<div id="myNav" class="overlay">
+  <div class="overlay-content"> <a href="#"> <img src="images/logo/backslash logo_BackSlash 2 White.png" clss="home btn" alt="logo" width="130px" href=""> </a> <a href="#about" class="btn" onclick="buttonFunction(); navToggle()">About</a> <a href="#team" class="btn" onclick="buttonFunction(); navToggle()">Team</a> <a href="#pricing" class="btn" onclick="navToggle(); buttonFunction();">Pricing</a> <a href="mailto:alexmhudson@gmail.com" class="btn" onclick="buttonFunction(); navToggle()">Contact</a> </div>
+</div>
+<header class="landing">
+  <div class="image-content">
+    <div class="image-wrap"> <img src="images/logo/backslash logo_BackSlash Icon.png" alt="logo image" width="200px">
+      <div class="image-text">
+        <h1>Try something new.</h1>
+        <p>Web development from the ground up.</p>
+        <a href="mailto: alex@backslashwebdev.com" class="btn main-button">Contact us.</a> </div>
     </div>
   </div>
-  <header class="landing">
-    <div class="image-content">
-      <div class="image-wrap">
-        <img src="images/logo/backslash logo_BackSlash Icon.png" alt="logo image" width="200px">
-        <div class="image-text">
-          <h1>Try something new.</h1>
-          <p>Web development from the ground up.</p>
-          <a href="mailto: alex@backslashwebdev.com" class="btn main-button">Contact us.</a>
-        </div>
+  <div id="landing-arrow"> <a id="landing-arrow-link"> <i class="fas fa-angle-down"></i> </a> </div>
+</header>
+<main>
+  <div class="about content-wrap" id="about">
+    <h1>Built from the ground up.</h1>
+    <p>With a constant changing internet, it is often hard to stay on top of what you need to do. That’s why we’re here: to
+      help build your website, so you can stick to what you need to do. We build all our websites from scratch, giving
+      us the power to change everything to the way you like, no matter how small or big. Building from the ground up allows
+      us to make your website work perfectly on any platform: Phones, Tablets, or Desktops.</p>
+    <div class="center-div">
+      <div class="icon btn" onClick="phoneFunction()"> <i class="fas fa-mobile"></i>
+        <p> Mobile</p>
+		</div>
+      <div class="icon btn" onClick="desktopFunction()"> 
+		<i class="fas fa-desktop"></i>
+        <p> Desktop</p>
       </div>
-    </div>
-    <div id="landing-arrow">
-      <a id="landing-arrow-link">
-        <i class="fas fa-angle-down"></i>
-      </a>
-    </div>
-  </header>
-  <main>
-   <div class="about content-wrap" id="about">
-      <h1>Built from the ground up.</h1>
-      <p>With a constant changing internet, it is often hard to stay on top of what you need to do. That’s why we’re here: to
-        help build your website, so you can stick to what you need to do. We build all our websites from scratch, giving
-        us the power to change everything to the way you like, no matter how small or big. Building from the ground up allows
-        us to make your website work perfectly on any platform: Phones, Tablets, or Desktops.</p>
-      <div class="center-div">
-        <div class="icon btn">
-			<a href="html/Phone.html"><i class="fas fa-mobile"></i>
-          <p> Mobile</p></a>
+	 <div class="icon btn" onClick="tabletFunction()">
+		<i class="fas fa-tablet"></i>
+        <p> Tablet</p>
         </div>
-        <div class="icon btn">
-          <a href="html/Tablet.html"><i class="fas fa-tablet"></i>
-          <p> Tablet</p></a>
-        </div>
-        <div class="icon btn">
-          <a href="html/laptop.html"><i class="fas fa-desktop"></i>
-          <p> Desktop</p></a>
-        </div>
-      </div>
     </div>
+    <div id="phone" class = "smartphone">
 
-    <!--
+        <div class="content">
+          <iframe src="http://backslashwebdev.com" style="width:100%;border:none;height:100%"></iframe>
+</div>
+    </div>
+	 <div id="tablet" class="tablet">
+
+      <div class="content">
+        <iframe src="http://backslashwebdev.com" style="width:100%;border:none;height:100%" ></iframe>
+      </div>
+
+    </div>
+	  <div id="desktop" class="laptop">
+
+      <div class="content">
+        <iframe src="http://backslashwebdev.com" style="width:100%;border:none;height:100%"></iframe>
+      </div>
+		  
+    </div>
+  </div>
+  
+  <!--
 	<div class ="work content-wrap">
 		<h1>What </h1>
 		
 		<p>Explaning why we are so cool</p>
 	</div>
 -->
-
-    <div class="team" id="team">
+  
+  <div class="team" id="team">
+    <div class="content-wrap">
+      <h1>Our Team</h1>
+      <p>With 7+ years of programming knowledge between us, we know what we are doing. We write efficient code to save your
+        users mobile data fees and time. Members of our team have worked with blockchain, backend development, game design,
+        and other projects. We are committed to helping your webpage look, feel, and be the best that it can be. </p>
+      <div class="card-center-div">
+        <div class="card"> <img src="images/alex.jpg" alt="Alex" style="width:100%">
+          <h1>Alex Hudson</h1>
+          <p class="title">Student. Gamer. Coder.</p>
+          <p>Was on Middle School Dance Company</p>
+          <a href="https://www.alexhudson.info"> <i class="fas fa-user"></i> </a> <a href="https://www.instagram.com/ahudz42/"> <i class="fab fa-instagram"></i> </a> <a href="https://www.linkedin.com/in/alex-m-hudson/"> <i class="fab fa-linkedin"></i> </a> <a href="https://www.facebook.com/alexander.hudson.200"> <i class="fab fa-facebook"></i> </a>
+          <p> <a class="btn" href="mailto:alex@backslashwebdev.com">Contact</a> </p>
+        </div>
+        <div class="card"> <img src="images/Cannon-contact1.v1.JPG" alt="Cannon" style="width: 100%">
+          <h1>Cannon Farr</h1>
+          <p class="title">Coder. Graphic Designer. Drummer.</p>
+          <p>Took a College Girl to Prom</p>
+          <a href="#"> <i class="fas fa-user"></i> </a> <a href="https://www.instagram.com/c.3.f/"> <i class="fab fa-instagram"></i> </a> <a href="https://www.linkedin.com/in/cannon-farr/"> <i class="fab fa-linkedin"></i> </a> <a href="#"> <i class="fab fa-facebook"></i> </a>
+          <p> <a class="btn" href="mailto:cannon@backslashwebdev.com">Contact</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="pricing" id="pricing">
       <div class="content-wrap">
-        <h1>Our Team</h1>
-        <p>With 7+ years of programming knowledge between us, we know what we are doing. We write efficient code to save your
-          users mobile data fees and time. Members of our team have worked with blockchain, backend development, game design,
-          and other projects. We are committed to helping your webpage look, feel, and be the best that it can be. </p>
+        <h1>Pricing</h1>
+        <p> We want to work with you on whatever you are building.</p>
         <div class="card-center-div">
-          <div class="card">
-            <img src="images/alex.jpg" alt="Alex" style="width:100%">
-            <h1>Alex Hudson</h1>
-            <p class="title">Student. Gamer. Coder.</p>
-            <p>Was on Middle School Dance Company</p>
-            <a href="https://www.alexhudson.info">
-              <i class="fas fa-user"></i>
-            </a>
-            <a href="https://www.instagram.com/ahudz42/">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alex-m-hudson/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.facebook.com/alexander.hudson.200">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <p>
-              <a class="btn" href="mailto:alex@backslashwebdev.com">Contact</a>
-            </p>
+          <div class="card"> <img src="images/personalProfile.jpg" alt="Personal Website" style="width:100%">
+            <h1>Personal</h1>
+            <p class="title">Built to show why you are awesome.</p>
+            <p>$250 Upfront. $20 monthly for hosting.</p>
+            <p> <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Personal Website">Contact</a> </p>
           </div>
-          <div class="card">
-            <img src="images/Cannon-contact1.v1.JPG" alt="Cannon" style="width: 100%">
-            <h1>Cannon Farr</h1>
-            <p class="title">Coder. Graphic Designer. Drummer.</p>
-            <p>Took a College Girl to Prom</p>
-            <a href="#">
-              <i class="fas fa-user"></i>
-            </a>
-            <a href="https://www.instagram.com/c.3.f/">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/cannon-farr/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <p>
-              <a class="btn" href="mailto:cannon@backslashwebdev.com">Contact</a>
-            </p>
+          <div class="card"> <img src="images/startup.jpg" alt="Startup Website" style="width:100%">
+            <h1>Startup</h1>
+            <p class="title">Designed to show your product.</p>
+            <p>$500 Upfront. $30 Monthly for hosting</p>
+            <p> <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Startup Website">Contact</a> </p>
           </div>
-        </div>
-      </div>
-      <div class="pricing" id="pricing">
-        <div class="content-wrap">
-          <h1>Pricing</h1>
-			<p> We want to work with you on whatever you are building.</p>
-          <div class="card-center-div">
-            <div class="card">
-              <img src="images/personalProfile.jpg" alt="Personal Website" style="width:100%">
-              <h1>Personal</h1>
-              <p class="title">Built to show why you are awesome.</p>
-              <p>$250 Upfront. $20 monthly for hosting.</p>
-              <p>
-                <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Personal Website">Contact</a>
-              </p>
-            </div>
-            <div class="card">
-              <img src="images/startup.jpg" alt="Startup Website" style="width:100%">
-              <h1>Startup</h1>
-              <p class="title">Designed to show your product.</p>
-              <p>$500 Upfront. $30 Monthly for hosting</p>
-              <p>
-                <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Startup Website">Contact</a>
-              </p>
-            </div>
-            <div class="card">
-              <img src="images/custom.jpg" alt="Custom Website" style="width:100%">
-              <h1>Custom</h1>
-              <p class="title">Everything your way.</p>
-              <p> Drawn out on paper, placed into Code. </p>
-              <p>
-                <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Custom Website">Contact</a>
-              </p>
-            </div>
+          <div class="card"> <img src="images/custom.jpg" alt="Custom Website" style="width:100%">
+            <h1>Custom</h1>
+            <p class="title">Everything your way.</p>
+            <p> Drawn out on paper, placed into Code. </p>
+            <p> <a class="btn" href="mailto:alexmhudson@gmail.com?subject=Custom Website">Contact</a> </p>
           </div>
         </div>
       </div>
     </div>
-  </main>
-
-  <footer>
-    <div class="footer-logo">
-      <img alt="Logo" src="images/logo/backslash logo_BackSlash 2 Grey.png" width="250">
-    </div>
-    <div class="footer-content">
-      <!--
+  </div>
+</main>
+<footer>
+  <div class="footer-logo"> <img alt="Logo" src="images/logo/backslash logo_BackSlash 2 Grey.png" width="250"> </div>
+  <div class="footer-content"> 
+    <!--
 	 	<ul>
 		 	<a class = "btn" href = "mailto: alex@backslashwebdev.com"> Contact Us </a>
 			<a class = "btn" href ="#"> Location </a>
 			<a class = "btn" href = "#"> Other </a>
 		</ul>
--->
-    </div>
-  </footer>
+--> 
+  </div>
+</footer>
 </body>
-
 </html>

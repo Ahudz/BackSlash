@@ -52,6 +52,43 @@ function logoOffHover() {
     "images/logo/backslash logo_BackSlash 3 Grey.png";
 }
 
+//phone colappsable menu
+function phoneFunction() {
+    var x = document.getElementById("phone");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		document.getElementById("tablet").style.display = "none";
+		document.getElementById("desktop").style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+	console.log("btn Clicked");
+}
+
+function tabletFunction() {
+    var x = document.getElementById("tablet");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		document.getElementById("phone").style.display = "none";
+		document.getElementById("desktop").style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+	console.log("btn Clicked");
+}
+
+function desktopFunction() {
+    var x = document.getElementById("desktop");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		document.getElementById("tablet").style.display = "none";
+		document.getElementById("phone").style.display = "none";
+    } else {
+        x.style.display = "none";
+    }
+	console.log("btn Clicked");
+}
+
 //arrow scroll
 $(function() {
   $("#landing-arrow-link").on("click", function(event) {

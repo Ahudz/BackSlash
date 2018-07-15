@@ -178,16 +178,6 @@ p {
   color: #f1f1f1;
 }
 
-/* .mobile-btn {
-  margin: 5px;
-  position: fixed;
-  right: 0px;
-  color: white;
-  border-color: white;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 4;
-} */
-
 .mobile-btn {
   margin: 5px;
   position: fixed;
@@ -225,26 +215,6 @@ p {
   transform: translate(-8.25px, 0px);
 }
 
-/* .bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-.change .bar2 {
-  opacity: 0;
-}
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-} */
 
 /* header styles
 --------------------------------*/
@@ -321,6 +291,7 @@ header img {
   color: grey;
   display: inline-block;
   margin: 5%;
+
   
 }
 .about .btn{
@@ -338,6 +309,185 @@ header img {
   text-decoration: none;
   color: grey;
 }
+
+/* Phone Styles
+--------------------------------*/
+/* The device with borders */
+#phone{
+	display: none;
+}
+.smartphone {
+  position: relative;
+  width: 400px;
+  height: 760px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 370px;
+  height: 640px;
+  background: white;
+}
+
+
+
+/* Tablet styles
+--------------------------------*/
+#tablet{
+/*	display: none;*/
+	margin-bottom: -300px;
+}
+
+/* The device with borders */
+.tablet {
+	  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.7) translate(20%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.7) translate(20%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  position: relative;
+  width: 780px;
+  height: 1115px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+	
+}
+
+/* The horizontal line on the top of the device */
+.tablet:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.tablet:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.tablet .content {
+  width: 750px;
+  height: 1000px;
+  background: white;
+  margin: -1px;
+}
+
+/* Laptop styles
+--------------------------------*/
+/* The laptop with borders */
+#desktop{
+	display: none;
+	position:relative;
+	margin-bottom: -200px;
+}
+.laptop {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  left: 50%;
+  position: absolute;
+  width: 1410px;
+  height: 850px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 24px 24px 80px;
+  background-color: white;
+
+}
+
+/* The keyboard of the laptop */
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 60px;
+  margin: 20px 0 0 -110px;
+  background: black;
+  border-radius: 6px;
+}
+
+/* The top of the keyboard */
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: -110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 1366px;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+}
+
+
+
 /* work styles
 --------------------------------*/
 
@@ -496,8 +646,29 @@ footer img {
   background-position: center;
   height: 100vh;
 	}
-	
+	#phone{
+		display: none !important;
+	}
+	#tablet{
+		display: none !important;
+	}
+	#desktop{
+		display: none !important;
+	}
+	.about .btn:hover{
+		 box-shadow: none;
+  		/*  background: #ffffff;*/
+ 		 transition: none;
+ 		 transition-timing-function: ease;
+		 border: none;
+	}
+}
 
+/*Small mobile*/
+@media (max-width: 400px){
+	.icon{
+		font-size: 75px;
+	}
 }
 
 /*Colors
