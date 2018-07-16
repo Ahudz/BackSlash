@@ -223,9 +223,11 @@ header {
   padding-top: 20px;
   padding-bottom: 38%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../images/darkComputer.jpg) no-repeat fixed;
+    url(../images/darkComputer.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center;
   height: 100vh;
 }
 header h1 {
@@ -284,6 +286,8 @@ header img {
 --------------------------------*/
 .about {
   background: white;
+	overflow: hidden;
+	
 }
 .icon {
   text-align: center;
@@ -315,8 +319,12 @@ header img {
 /* The device with borders */
 #phone{
 	display: none;
+	margin-bottom: -200px;
 }
 .smartphone {
+  stransform-origin: 0 0;
+  transform-origin: 0 0;
+  transform: scale(.7) translate(20%);
   position: relative;
   width: 400px;
   height: 760px;
@@ -368,23 +376,24 @@ header img {
 --------------------------------*/
 #tablet{
 /*	display: none;*/
-	margin-bottom: -300px;
+	 margin-bottom: -550px;
 }
 
 /* The device with borders */
 .tablet {
-	  -webkit-transform-origin: 0 0;
+  stransform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: scale(.7) translate(20%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
-  transform: scale(.7) translate(20%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.5) translate(50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
   position: relative;
-  width: 780px;
+  width: 830px;
   height: 1115px;
   margin: auto;
   border: 16px black solid;
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
+  
+	
 	
 }
 
@@ -418,10 +427,11 @@ header img {
 
 /* The screen (or content) of the device */
 .tablet .content {
-  width: 750px;
+  width: 800px;
   height: 1000px;
   background: white;
   margin: -1px;
+	
 }
 
 /* Laptop styles
@@ -430,13 +440,13 @@ header img {
 #desktop{
 	display: none;
 	position:relative;
-	margin-bottom: -200px;
+	margin-bottom: -400px;
 }
 .laptop {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
-  transform: scale(.6) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  -webkit-transform: scale(.5) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(.5) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
   left: 50%;
   position: absolute;
   width: 1410px;
@@ -496,6 +506,8 @@ header img {
 .team {
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3)),
     url(../images/woods2.jpg) no-repeat scroll center;
+  
+	
 }
 
 .team .card {
@@ -641,9 +653,11 @@ footer img {
       rgba(0, 0, 0, 0.5), 
       rgba(0, 0, 0, 0.2)
     ),
-    url(../images/surface.jpg) no-repeat fixed;
-		background-size: cover;
-  background-position: center;
+    url(../images/surface.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
   height: 100vh;
 	}
 	#phone{
