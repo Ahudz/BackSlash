@@ -285,10 +285,12 @@ header img {
 /* about styles
 --------------------------------*/
 .about {
-  background: white;
-	overflow: hidden;
+	
+	background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, 1)),
+    url(../images/clouds.jpg) no-repeat fixed center;
 	
 }
+
 .icon {
   text-align: center;
   font-size: 100px;
@@ -317,8 +319,13 @@ header img {
 /* Phone Styles
 --------------------------------*/
 /* The device with borders */
+
+.devices .content-wrap{
+	overflow: hidden;
+}
+
 #phone{
-	display: none;
+/*	display: none;*/
 	margin-bottom: -200px;
 }
 .smartphone {
@@ -375,7 +382,7 @@ header img {
 /* Tablet styles
 --------------------------------*/
 #tablet{
-/*	display: none;*/
+	display: none;
 	 margin-bottom: -550px;
 }
 
@@ -504,8 +511,8 @@ header img {
 /* team styles
 --------------------------------*/
 .team {
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.3)),
-    url(../images/woods2.jpg) no-repeat scroll center;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7)),
+    url(../images/woods2.jpg) no-repeat fixed center;
   
 	
 }
@@ -530,7 +537,11 @@ header img {
 /* pricing styles
 --------------------------------*/
 .pricing {
-  background: grey;
+	 background: none;
+/*  background: rgb(81, 133, 198);*/
+}
+.card{
+/*	background: grey;*/
 }
 .pricing .card {
   min-width: 300px;
@@ -653,7 +664,7 @@ footer img {
       rgba(0, 0, 0, 0.5), 
       rgba(0, 0, 0, 0.2)
     ),
-    url(../images/surface.jpg) no-repeat center center fixed;
+    url(../images/surface.jpg) no-repeat center center scroll;
 	-webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
