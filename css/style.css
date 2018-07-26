@@ -1,4 +1,3 @@
-
 /* Global styles
 --------------------------------*/
 
@@ -18,7 +17,7 @@ html {
 body {
   background: white;
   color: black;
-  font-family: "custom";
+  font-family: 'custom';
   margin: 0;
   z-index: 1;
 }
@@ -32,8 +31,8 @@ h1 {
   margin-top: 60px;
   font-size: 3em;
 }
-hr{
-	border-top: 3px double #8c8b8b;
+hr {
+  border-top: 3px double #8c8b8b;
 }
 
 p {
@@ -78,7 +77,6 @@ p {
   justify-content: center;
 }
 
-
 .card {
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
@@ -105,6 +103,97 @@ p {
 .card .btn:hover {
   opacity: 0.7;
 }
+
+/* Loader Styles
+--------------------------------*/
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  z-index: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  animation-name: container;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.loader-logo {
+  width: 10%;
+  height: 10%;
+  /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); */
+  /* clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); */
+  /* transition: clip-path 5s ease; */
+
+  animation-name: logo;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.loader-text {
+  width: 20%;
+  height: 20%;
+  transform: translateY(10px);
+  animation-name: text;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 5.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translate(-50px, 10px);
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes logo {
+  0% {
+    opacity: 100;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 100;
+  }
+}
+
+@keyframes container {
+  0% {
+    opacity: 100;
+    z-index: 100;
+  }
+  75% {
+    opacity: 100;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
 /* Nav styles
 --------------------------------*/
 #navbar {
@@ -121,14 +210,14 @@ p {
   float: right;
   border: 3px;
   margin: 3px 10px;
-	transition: none;
+  transition: none;
 }
 #navbar .btn:hover {
-/*  background: rgba(128, 128, 128, 0.5);*/
-	 border: solid #000000 1px;
-	 padding: 9px;
-/*	box-shadow: none;*/
-    transition: none;
+  /*  background: rgba(128, 128, 128, 0.5);*/
+  border: solid #000000 1px;
+  padding: 9px;
+  /*	box-shadow: none;*/
+  transition: none;
 }
 
 #navbar img {
@@ -218,7 +307,6 @@ p {
   transform: translate(-8.25px, 0px);
 }
 
-
 /* header styles
 --------------------------------*/
 header {
@@ -288,10 +376,8 @@ header img {
 /* about styles
 --------------------------------*/
 .about {
-	
-	background: linear-gradient(rgba(255, 255, 255, .0), rgba(255, 255, 255, 1)),
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
     url(../images/clouds.jpg) no-repeat fixed center;
-	
 }
 
 .icon {
@@ -300,21 +386,19 @@ header img {
   color: grey;
   display: inline-block;
   margin: 5%;
-
-  
 }
-.about .btn{
-	border: none;
+.about .btn {
+  border: none;
 }
-.about .btn:hover{
-	border: 1px;
+.about .btn:hover {
+  border: 1px;
 }
 .icon p {
   font-size: 1rem;
   color: black;
   word-spacing: normal;
 }
-.icon a{
+.icon a {
   text-decoration: none;
   color: grey;
 }
@@ -323,18 +407,18 @@ header img {
 --------------------------------*/
 /* The device with borders */
 
-.devices .content-wrap{
-	overflow: hidden;
+.devices .content-wrap {
+  overflow: hidden;
 }
 
-#phone{
-	display: none;
-	margin-bottom: -200px;
+#phone {
+  display: none;
+  margin-bottom: -200px;
 }
 .smartphone {
   stransform-origin: 0 0;
   transform-origin: 0 0;
-  transform: scale(.7) translate(20%);
+  transform: scale(0.7) translate(20%);
   position: relative;
   width: 400px;
   height: 760px;
@@ -380,20 +464,18 @@ header img {
   background: white;
 }
 
-
-
 /* Tablet styles
 --------------------------------*/
-#tablet{
-	display: none;
-	 margin-bottom: -550px;
+#tablet {
+  display: none;
+  margin-bottom: -550px;
 }
 
 /* The device with borders */
 .tablet {
   stransform-origin: 0 0;
   transform-origin: 0 0;
-  transform: scale(.5) translate(50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(0.5) translate(50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
   position: relative;
   width: 830px;
   height: 1115px;
@@ -402,9 +484,6 @@ header img {
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
-  
-	
-	
 }
 
 /* The horizontal line on the top of the device */
@@ -441,22 +520,21 @@ header img {
   height: 1000px;
   background: white;
   margin: -1px;
-	
 }
 
 /* Laptop styles
 --------------------------------*/
 /* The laptop with borders */
-#desktop{
-	display: none;
-	position:relative;
-	margin-bottom: -400px;
+#desktop {
+  display: none;
+  position: relative;
+  margin-bottom: -400px;
 }
 .laptop {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: scale(.5) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
-  transform: scale(.5) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  -webkit-transform: scale(0.5) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
+  transform: scale(0.5) translate(-50%); /* Scaled down for a better Try-it experience (change to 1 for full scale) */
   left: 50%;
   position: absolute;
   width: 1410px;
@@ -466,7 +544,6 @@ header img {
   border-color: black;
   border-width: 24px 24px 80px;
   background-color: white;
-
 }
 
 /* The keyboard of the laptop */
@@ -506,8 +583,6 @@ header img {
   border: none;
 }
 
-
-
 /* work styles
 --------------------------------*/
 
@@ -516,8 +591,6 @@ header img {
 .team {
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)),
     url(../images/woods2.jpg) no-repeat fixed center;
-  
-	
 }
 
 .team .card {
@@ -540,11 +613,11 @@ header img {
 /* pricing styles
 --------------------------------*/
 .pricing {
-	 background: none;
-/*  background: rgb(81, 133, 198);*/
+  background: none;
+  /*  background: rgb(81, 133, 198);*/
 }
-.card{
-/*	background: grey;*/
+.card {
+  /*	background: grey;*/
 }
 .pricing .card {
   min-width: 300px;
@@ -662,41 +735,47 @@ footer img {
   #landing-arrow {
     display: none;
   }
-	header{
-		 background:  linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(../images/surface.jpg) no-repeat center center scroll;
-	-webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-  height: 100vh;
-	}
-	#phone{
-		display: none !important;
-	}
-	#tablet{
-		display: none !important;
-	}
-	#desktop{
-		display: none !important;
-	}
-	.about .btn:hover{
-		 box-shadow: none;
-  		/*  background: #ffffff;*/
- 		 transition: none;
- 		 transition-timing-function: ease;
-		 border: none;
-	}
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+      url(../images/surface.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+  #phone {
+    display: none !important;
+  }
+  #tablet {
+    display: none !important;
+  }
+  #desktop {
+    display: none !important;
+  }
+  .about .btn:hover {
+    box-shadow: none;
+    /*  background: #ffffff;*/
+    transition: none;
+    transition-timing-function: ease;
+    border: none;
+  }
+
+  .loader-logo {
+    width: 20%;
+    height: 20%;
+  }
+  .loader-text {
+    width: 40%;
+    height: 40%;
+  }
 }
 
 /*Small mobile*/
-@media (max-width: 400px){
-	.icon{
-		font-size: 75px;
-	}
+@media (max-width: 400px) {
+  .icon {
+    font-size: 75px;
+  }
 }
 
 /*Colors
@@ -704,4 +783,3 @@ bright blue rgba(51, 133, 198, 1);
 
 gray rgb(128,128,128)
 */
-

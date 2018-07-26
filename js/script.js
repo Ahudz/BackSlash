@@ -141,6 +141,9 @@ $(function() {
   });
 });
 
+
+
+
 //ie detection
 $(document).ready(function() {
   var isIE =
