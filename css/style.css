@@ -117,7 +117,7 @@ p {
   justify-items: center;
   align-items: center;
   animation-name: container;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -137,10 +137,10 @@ p {
   /* transition: clip-path 5s ease; */
 
   animation-name: logo;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  animation-delay: 1.5s;
+  animation-delay: .75s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -149,9 +149,9 @@ p {
   height: 20%;
   transform: translateY(10px);
   animation-name: text;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: 1;
-  animation-delay: 5.5s;
+  animation-delay: 2.75s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
